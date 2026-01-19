@@ -34,7 +34,7 @@ jupyter lab
 ```
 
 ### Відкрий Jupyter Lab у браузері.
-### В дереві файлів знайди та відкрий ноутбук spark_home_work.ipynb.
+### В дереві файлів знайди та відкрий ноутбук `spark_dataframe_extra_task.ipynb`
 ### Запусти комірки:
 	•	по черзі (Shift + Enter), або
 	•	одним кліком: Kernel → Restart Kernel and Run All Cells (перезапустить kernel і виконає все з початку).

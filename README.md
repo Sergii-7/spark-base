@@ -40,3 +40,30 @@ jupyter lab
 	•	одним кліком: Kernel → Restart Kernel and Run All Cells (перезапустить kernel і виконає все з початку).
 
 ### Рекомендація: якщо щось “поїхало” або з’явилися дивні помилки після правок — використовуй саме Restart Kernel and Run All Cells.
+### Такі самі дії виконати з файлом `spark_core.ipynb`.
+
+
+## PART 2 - Spark в Docker
+
+### Підготувати директорії для збереження ноутбуків та логів Spark:
+```bash
+mkdir -p notebooks spark-logs
+chmod -R 777 notebooks spark-logs
+```
+
+### Start by Docker Compose:
+```bash
+docker-compose -f docker-compose.yaml up -d --build
+docker-compose -f docker-compose.yaml ps -a
+```
+
+### Перевірити, що master живий:
+```bash
+docker logs -f spark-master
+```
+
+### Підключитися до Spark Master через PySpark:
+```bash
+docker exec -it spark-master bash
+pyspark --master spark://spark-master:7077
+```

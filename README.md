@@ -43,7 +43,7 @@ jupyter lab
 ### Такі самі дії виконати з файлом `spark_core.ipynb`.
 
 
-## PART 2 - Spark в Docker
+## PART 2 - Spark Cluster with Docker Compose
 
 ### Підготувати директорії для збереження ноутбуків та логів Spark:
 ```bash
